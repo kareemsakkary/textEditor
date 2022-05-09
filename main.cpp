@@ -49,6 +49,7 @@ int main() {
             case 14:
                 break;
             case 15:
+                save(data);
                 break;
             case 16:
                 run = false;

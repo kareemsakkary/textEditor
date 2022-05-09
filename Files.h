@@ -14,7 +14,7 @@ string open(string fileName);
 
 string openIfExist(string fileName);
 
-void save(string fileName,string data);
+void save(string data);
 
 
 void merge(string data);

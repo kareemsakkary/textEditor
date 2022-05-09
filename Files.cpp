@@ -30,7 +30,10 @@ string openIfExist(string fileName){
     file.close();
     return data;
 }
-void save(string fileName,string data){
+void save(string data){
+    string fileName;
+    cout << "enter name for the new file : ";
+    cin >> fileName;
     fstream file;
     file.open(fileName,ios::out);
     file << data;
