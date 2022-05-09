@@ -55,6 +55,12 @@ build CMakeFiles/textEditor.dir/main.cpp.obj: CXX_COMPILER__textEditor_Debug C$:
   OBJECT_DIR = CMakeFiles\textEditor.dir
   OBJECT_FILE_DIR = CMakeFiles\textEditor.dir
 
+build CMakeFiles/textEditor.dir/Files.cpp.obj: CXX_COMPILER__textEditor_Debug C$:/Users/Kareemsakkary/Desktop/college/Second_Term/Structured_Programming/Assigment$ 4/textEditor/Files.cpp || cmake_object_order_depends_target_textEditor
+  DEP_FILE = CMakeFiles\textEditor.dir\Files.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\textEditor.dir
+  OBJECT_FILE_DIR = CMakeFiles\textEditor.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target textEditor
@@ -63,7 +69,7 @@ build CMakeFiles/textEditor.dir/main.cpp.obj: CXX_COMPILER__textEditor_Debug C$:
 #############################################
 # Link the executable textEditor.exe
 
-build textEditor.exe: CXX_EXECUTABLE_LINKER__textEditor_Debug CMakeFiles/textEditor.dir/main.cpp.obj
+build textEditor.exe: CXX_EXECUTABLE_LINKER__textEditor_Debug CMakeFiles/textEditor.dir/main.cpp.obj CMakeFiles/textEditor.dir/Files.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\textEditor.dir
