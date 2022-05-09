@@ -1,0 +1,3 @@
+C:/Users/Kareemsakkary/Desktop/college/Second_Term/Structured_Programming/Assigment 4/textEditor/cmake-build-debug/CMakeFiles/textEditor.dir
+C:/Users/Kareemsakkary/Desktop/college/Second_Term/Structured_Programming/Assigment 4/textEditor/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kareemsakkary/Desktop/college/Second_Term/Structured_Programming/Assigment 4/textEditor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
