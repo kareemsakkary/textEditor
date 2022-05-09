@@ -41,6 +41,7 @@ int main() {
                 searchWord(data);
                 break;
             case 11:
+                countNumOfWord(data);
                 break;
             case 12:
                 uppercase(data);
@@ -49,6 +50,7 @@ int main() {
                 lowercase(data);
                 break;
             case 14:
+                firstCaps(data);
                 break;
             case 15:
                 save(data);

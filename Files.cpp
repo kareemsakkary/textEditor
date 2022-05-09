@@ -92,6 +92,19 @@ void searchWord(string data){
         cout << "Word was not found in the file " << endl;
     }
 }
+void countNumOfWord(string& data){
+    int count = 0;
+    string word;
+    cout << "Enter the word you want to count: ";
+    cin >> word;
+    regex rg("("+upper(word)+")(.*)");
+    for(int i = 0; i < data.size(); i++){
+        if(regex_search(upper(data),rg)){
+            count++;
+        }
+    }
+    cout << "The word" << ' ' << word << ' ' << "was found " << ' ' << count << ' ' << "times" << endl;
+}
 void uppercase(string& data){
     for (int i = 0; i < data.size(); i++) {
         data[i] = toupper(data[i]);
@@ -100,5 +113,25 @@ void uppercase(string& data){
 void lowercase(string& data){
     for (int i = 0; i < data.size(); i++) {
         data[i] = tolower(data[i]);
+    }
+}
+void firstCaps(string& data) {
+
+    int len = data.size();
+
+    for (int i = 0; i < len; ++i) {
+        if (i == 0) {
+            if (islower(data[i]))
+                data[i] = toupper(data[i]);
+        } else {
+            if (data[i] != ' ') {
+                if (isupper(data[i]))
+                    data[i] = tolower(data[i]);
+            } else {
+                i++;
+                if (islower(data[i]))
+                    data[i] = toupper(data[i]);
+            }
+        }
     }
 }
