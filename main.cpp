@@ -43,8 +43,10 @@ int main() {
             case 11:
                 break;
             case 12:
+                uppercase(data);
                 break;
             case 13:
+                lowercase(data);
                 break;
             case 14:
                 break;

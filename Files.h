@@ -23,3 +23,5 @@ void countChars(string data);
 void countLines(string data);
 void searchWord(string data);
 #endif //TEXTEDITOR_FILES_H
+void uppercase(string data);
+void lowercase(string data);

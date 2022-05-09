@@ -92,3 +92,13 @@ void searchWord(string data){
         cout << "Word was not found in the file " << endl;
     }
 }
+void uppercase(string data){
+    for (int i = 0; i < data.size(); i++) {
+        data[i] = toupper(data[i]);
+    }
+}
+void lowercase(string data){
+    for (int i = 0; i < data.size(); i++) {
+        data[i] = tolower(data[i]);
+    }
+}
