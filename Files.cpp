@@ -92,18 +92,18 @@ void searchWord(string data){
         cout << "Word was not found in the file " << endl;
     }
 }
-void countNumOfWord(string& data){
-    int count = 0;
+void countNumOfWord(string& data) {
     string word;
-    cout << "Enter the word you want to count: ";
+    cout << "Enter a word you want to count: ";
     cin >> word;
-    regex rg("("+upper(word)+")(.*)");
-    for(int i = 0; i < data.size(); i++){
-        if(regex_search(upper(data),rg)){
-            count++;
-        }
+    string regexPattern = "\\b" + word + "\\b";
+    const regex pattern(regexPattern);
+    int count = 0;
+    auto it = sregex_iterator(data.begin(), data.end(), pattern);
+    for (it; it != sregex_iterator(); it++) {
+        count++;
     }
-    cout << "The word" << ' ' << word << ' ' << "was found " << ' ' << count << ' ' << "times" << endl;
+        cout << "The word" << ' ' << word << ' ' << "was found" << ' ' << count << ' ' << "times" << endl;
 }
 void uppercase(string& data){
     for (int i = 0; i < data.size(); i++) {
