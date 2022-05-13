@@ -135,3 +135,9 @@ void firstCaps(string& data) {
         }
     }
 }
+void addContent(string& data){
+    string newText;
+    getline(cin,newText);
+    data+= " " +newText;
+    cout<< data ;
+}

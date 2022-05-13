@@ -16,6 +16,7 @@ int main() {
         int op = menu();
         switch (op) {
             case 1:
+                addContent(data);
                 break;
             case 2:
                 break;

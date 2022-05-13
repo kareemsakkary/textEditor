@@ -27,3 +27,4 @@ void countNumOfWord(string& data);
 void uppercase(string& data);
 void lowercase(string& data);
 void firstCaps(string& data);
+void addContent(string& data);
