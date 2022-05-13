@@ -141,3 +141,6 @@ void addContent(string& data){
     data+= " " +newText;
     cout<< data ;
 }
+void display(string data){
+    cout<<data;
+}
