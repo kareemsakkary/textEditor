@@ -1,9 +1,12 @@
 # ninja log v5
-3	2449	6737814371073939	CMakeFiles/textEditor.dir/main.cpp.obj	a6d249a297b24a68
-2449	3409	6737814380640546	textEditor.exe	8c6780f353c6357a
-5	924	6737796136356279	CMakeFiles/textEditor.dir/Files.cpp.obj	4de32a0f538c457c
 2	1126	6738101755002797	CMakeFiles/textEditor.dir/main.cpp.obj	a6d249a297b24a68
-5	2829	6738101771949567	CMakeFiles/textEditor.dir/Files.cpp.obj	4de32a0f538c457c
-2829	3960	6738101783311317	textEditor.exe	8c6780f353c6357a
-3	2604	6738102520431901	CMakeFiles/textEditor.dir/Files.cpp.obj	4de32a0f538c457c
 2604	3646	6738102530894341	textEditor.exe	8c6780f353c6357a
+3	2604	6738102520431901	CMakeFiles/textEditor.dir/Files.cpp.obj	4de32a0f538c457c
+3	1515	6742687451465621	CMakeFiles/textEditor.dir/main.cpp.obj	a6d249a297b24a68
+7	2925	6742687465464792	CMakeFiles/textEditor.dir/Files.cpp.obj	4de32a0f538c457c
+2925	4127	6742687477582012	textEditor.exe	8c6780f353c6357a
+3	1108	6742693056870683	CMakeFiles/textEditor.dir/main.cpp.obj	a6d249a297b24a68
+1109	2247	6742693068268051	textEditor.exe	8c6780f353c6357a
+3	1137	6742695362268472	CMakeFiles/textEditor.dir/main.cpp.obj	a6d249a297b24a68
+6	2775	6742695378573952	CMakeFiles/textEditor.dir/Files.cpp.obj	4de32a0f538c457c
+2775	4145	6742695392267410	textEditor.exe	8c6780f353c6357a

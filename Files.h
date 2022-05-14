@@ -30,5 +30,5 @@ void firstCaps(string& data);
 void addContent(string& data);
 void display(string data);
 void empty(string& data);
-string encrypt(string& data);
-string decrypt(string&data);
+void encrypt(string& data);
+void decrypt(string&data);

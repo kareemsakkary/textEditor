@@ -39,8 +39,6 @@ void save(string data){
     file << data;
     file.close();
 }
-
-
 void merge(string data){
     string fname,newData;
     cout << "Enter file name to merge : ";
@@ -48,7 +46,6 @@ void merge(string data){
     newData = openIfExist(fname);
     data += " "+newData;
 }
-
 void countWords(string data){
     int count=0;
     for(char c :data){
@@ -58,11 +55,9 @@ void countWords(string data){
     }
     cout << "number of words = "<<count<<endl;
 }
-
 void countChars(string data){
     cout << "number of characters = "<<data.size()<<endl;
 }
-
 void countLines(string data){
     int count=0;
     for(char c :data){
@@ -72,7 +67,6 @@ void countLines(string data){
     }
     cout << "number of lines = "<<count<<endl;
 }
-
 string upper(string s){
     string upper_s;
     for (char c : s){
@@ -80,7 +74,6 @@ string upper(string s){
     }
     return upper_s;
 }
-
 void searchWord(string data){
     string word;
     cout << "Enter word to search : ";
@@ -92,7 +85,7 @@ void searchWord(string data){
         cout << "Word was not found in the file " << endl;
     }
 }
-void countNumOfWord(string& data) {
+void countNumOfWord(string& data){
     string word;
     cout << "Enter a word you want to count: ";
     cin >> word;
@@ -103,7 +96,7 @@ void countNumOfWord(string& data) {
     for (it; it != sregex_iterator(); it++) {
         count++;
     }
-        cout << "The word" << ' ' << word << ' ' << "was found" << ' ' << count << ' ' << "times" << endl;
+    cout << "The word" << ' ' << word << ' ' << "was found" << ' ' << count << ' ' << "times" << endl;
 }
 void uppercase(string& data){
     for (int i = 0; i < data.size(); i++) {
@@ -148,7 +141,7 @@ void display(string data){
 void empty(string& data){
     data="";
 }
-string encrypt(string& data)
+void encrypt(string& data)
 {
     string result = "";
 
@@ -158,31 +151,30 @@ string encrypt(string& data)
         // apply transformation to each character
         // Encrypt Uppercase letters
         if (isupper(data[i]))
-            result += char(int(data[i]+1-65)%26 +65);
+            result += char(int(data[i]+1));
 
             // Encrypt Lowercase letters
         else
-            result += char(int(data[i]+1-97)%26 +97);
+            result += char(int(data[i]+1));
     }
     data=result;
 
 
 }
-string decrypt(string& data)
+void decrypt(string& data)
 {
     string result = "";
-
     // traverse text
     for (int i=0;i<data.length();i++)
     {
         // apply transformation to each character
         // Encrypt Uppercase letters
         if (isupper(data[i]))
-            result += char(int(data[i]+25-65)%26 +65);
+            result += char(int(data[i]-1));
 
             // Encrypt Lowercase letters
         else
-            result += char(int(data[i]+25-97)%26 +97);
+            result += char(int(data[i]-1));
     }
     data=result;
 

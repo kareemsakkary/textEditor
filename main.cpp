@@ -64,6 +64,7 @@ int main() {
                 run = false;
                 break;
         }
+        system("PAUSE");
     }
     return 0;
 }
