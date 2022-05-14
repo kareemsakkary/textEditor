@@ -137,10 +137,54 @@ void firstCaps(string& data) {
 }
 void addContent(string& data){
     string newText;
+    cin.ignore();
     getline(cin,newText);
     data+= " " +newText;
     cout<< data ;
 }
 void display(string data){
     cout<<data;
+}
+void empty(string& data){
+    data="";
+}
+string encrypt(string& data)
+{
+    string result = "";
+
+    // traverse text
+    for (int i=0;i<data.length();i++)
+    {
+        // apply transformation to each character
+        // Encrypt Uppercase letters
+        if (isupper(data[i]))
+            result += char(int(data[i]+1-65)%26 +65);
+
+            // Encrypt Lowercase letters
+        else
+            result += char(int(data[i]+1-97)%26 +97);
+    }
+    data=result;
+
+
+}
+string decrypt(string& data)
+{
+    string result = "";
+
+    // traverse text
+    for (int i=0;i<data.length();i++)
+    {
+        // apply transformation to each character
+        // Encrypt Uppercase letters
+        if (isupper(data[i]))
+            result += char(int(data[i]+25-65)%26 +65);
+
+            // Encrypt Lowercase letters
+        else
+            result += char(int(data[i]+25-97)%26 +97);
+    }
+    data=result;
+
+
 }

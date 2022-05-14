@@ -19,12 +19,16 @@ int main() {
                 addContent(data);
                 break;
             case 2:
+                display(data);
                 break;
             case 3:
+                empty(data);
                 break;
             case 4:
+                encrypt(data);
                 break;
             case 5:
+                decrypt(data);
                 break;
             case 6:
                 merge(data);
